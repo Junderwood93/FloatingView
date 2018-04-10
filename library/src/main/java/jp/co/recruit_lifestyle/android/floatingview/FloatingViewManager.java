@@ -486,7 +486,7 @@ public class FloatingViewManager implements ScreenChangedListener, View.OnTouchL
         floatingView.setAnimateInitialMove(options.animateInitialMove);
 
         // set FloatingView size
-        final FrameLayout.LayoutParams targetParams = new FrameLayout.LayoutParams(options.floatingViewWidth, options.floatingViewHeight);
+        final FrameLayout.LayoutParams targetParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         view.setLayoutParams(targetParams);
         floatingView.addView(view);
 
